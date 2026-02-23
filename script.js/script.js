@@ -168,8 +168,9 @@ mainContainer.addEventListener('click', function (event) {
         // remove from interviewList 
         interviewList = interviewList.filter(item => item.jobName !== jobName)
 
-        // remove from rejectedList 
 
+        // remove from rejectedList 
+        rejectedList = rejectedList.filter(item => item.jobName !== jobName)
 
         if (currentStatus === "interview-filter-btn") {
             renderInterview()
