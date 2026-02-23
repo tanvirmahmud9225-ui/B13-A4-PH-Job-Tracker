@@ -226,37 +226,40 @@ function renderInterview() {
 
 
 
+function renderRejected() {
+    filterSection.innerHTML = "";
 
+    if (rejectedList.length === 0) {
+        noJobSection.classList.remove("hidden")
+    } else {
+        noJobSection.classList.add("hidden")
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    for (let rejected of rejectedList) {
+        const div = document.createElement("div");
+        div.className = "cardBox p-6 shadow-md flex justify-between border-2 border-gray-200 rounded-[10px] mt-7";
+        div.innerHTML = `
+            <div class="left space-y-2">
+                    <h3 class="jobName text-3xl font-medium">${rejected.jobName}</h3>
+                    <p class="jobtype text-gray-400 font-medium text-[1.3rem] mb-5">${rejected.jobtype}</p>
+                    <div class="mb-6">
+                        <span class="jobSalary text-gray-400 rounded-[10px]">${rejected.jobSalary}</span>
+                    </div>
+                    <p class="jobStatus py-2 px-3 w-[140px] text-center rounded-[10px] bg-[#EEF4FF] w- ">Rejected
+                    </p>
+                    <p class="JobNote text-gray-500">${rejected.JobNote}</p>
+                    <div class="mt-6">
+                        <button class="interview-btn btn border-[green] mr-3 text-[green]">interview</button>
+                        <button class="rejected-btn btn border-[red] text-[red]">Rejected</button>
+                    </div>
+            </div>
+            <div class="right">
+                    <div class="border p-3 rounded-full"><i class="fa-regular fa-trash-can"></i></div>
+            </div>
+        `
+        filterSection.appendChild(div)
+    }
+}
 
 
 
