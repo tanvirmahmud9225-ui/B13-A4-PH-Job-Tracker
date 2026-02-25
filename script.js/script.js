@@ -217,7 +217,7 @@ function renderInterview() {
                     </div>
             </div>
             <div class="right">
-                    <div class="border p-3 rounded-full"><i class="fa-regular fa-trash-can"></i></div>
+                    <div class="delete-btn border p-3 rounded-full"><i class="delete-btn fa-regular fa-trash-can"></i></div>
             </div>
         `
         filterSection.appendChild(div)
@@ -255,7 +255,7 @@ function renderRejected() {
                     </div>
             </div>
             <div class="right">
-                    <div class="border p-3 rounded-full"><i class="fa-regular fa-trash-can"></i></div>
+                    <div class="delete-btn border p-3 rounded-full"><i class="delete-btn fa-regular fa-trash-can"></i></div>
             </div>
         `
         filterSection.appendChild(div)
