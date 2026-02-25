@@ -216,8 +216,8 @@ function renderInterview() {
                         <button class="rejected-btn btn border-[red] text-[red]">Rejected</button>
                     </div>
             </div>
-            <div class="right">
-                    <img class="delete-btn border border-3 border-blue-800 rounded-full p-1 w-14" id=""
+             <div class="right">
+                    <img class="delete-btn min-w-10 sm:min-w-14 bg-gray-400 rounded-full p-1 " id=""
                         src="./icon/icons8-delete-64.png" alt="">
             </div>
         `
@@ -255,8 +255,8 @@ function renderRejected() {
                         <button class="rejected-btn btn border-[red] text-[red]">Rejected</button>
                     </div>
             </div>
-            <div class="right">
-                    <img class="delete-btn border border-3 border-blue-800 rounded-full p-1 w-14" id=""
+             <div class="right">
+                    <img class="delete-btn min-w-10 sm:min-w-14 bg-gray-400 rounded-full p-1 " id=""
                         src="./icon/icons8-delete-64.png" alt="">
             </div>
         `
