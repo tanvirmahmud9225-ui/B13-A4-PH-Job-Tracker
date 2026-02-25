@@ -160,7 +160,7 @@ mainContainer.addEventListener('click', function (event) {
         }
         calculateTotal()
     } else if (event.target.classList.contains("delete-btn")) {
-        const parentNode = event.target.parentNode.parentNode.parentNode;
+        const parentNode = event.target.parentNode.parentNode;
         const jobName = parentNode.querySelector(".jobName").innerText;
 
         parentNode.remove();
@@ -217,7 +217,8 @@ function renderInterview() {
                     </div>
             </div>
             <div class="right">
-                    <div class="delete-btn border p-3 rounded-full"><i class="delete-btn fa-regular fa-trash-can"></i></div>
+                    <img class="delete-btn border border-3 border-blue-800 rounded-full p-1 w-14" id=""
+                        src="./icon/icons8-delete-64.png" alt="">
             </div>
         `
         filterSection.appendChild(div)
@@ -255,7 +256,8 @@ function renderRejected() {
                     </div>
             </div>
             <div class="right">
-                    <div class="delete-btn border p-3 rounded-full"><i class="delete-btn fa-regular fa-trash-can"></i></div>
+                    <img class="delete-btn border border-3 border-blue-800 rounded-full p-1 w-14" id=""
+                        src="./icon/icons8-delete-64.png" alt="">
             </div>
         `
         filterSection.appendChild(div)
